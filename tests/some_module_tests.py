@@ -13,3 +13,11 @@ class Example(unittest.TestCase):
         c = add(a, b)
 
         self.assertEqual(c, a+b)
+
+    def test_also_add(self):
+        a = 2+4j
+        b = 4
+
+        c = add(a, b)
+
+        self.assertEqual(c, a + b)
